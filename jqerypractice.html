@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery</title>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<input type="text" name="un">
+<input type="text" name="un">
+<input type="text" name="un">
+<input type="text" name="un">
+
+<body>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("input").focus(function(){
+				$(this).css("background-color", "#ebe834");
+
+			});
+			$("input").blur(function(){
+				$(this).css("background-color","#ffffff")
+
+			});
+		});
+	</script>
+
+</body>
+</html>

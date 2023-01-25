@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><br>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mysite</title>
+	<script type="text/javascript">
+		function Datacal()
+		{
+			var pqty=document.getElementById('qty').value;
+			var prate=document.getElementById('rate').value;
+			var mytot=pqty*prate;
+			document.getElementById('total').value=mytot;
+
+		}
+	</script>
+</head>
+<body bgcolor="yellow">
+	Enter Product<input type="text" name="" id="pname" >
+	<br>
+    <br>
+	Qty <input type="text" name="" id="qty">
+	<br>
+<br>
+	Rate <input type="text" name="" id="rate" onblur="Datacal();">
+	<br>
+<br>
+	Total Price <input type="text" name="" id="total">
+	<br>
+<br>
+	<button>Submit now</button>
+
+</body>
+</html>

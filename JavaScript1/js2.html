@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my site </title>
+
+
+<script type="text/javascript">
+	function validation()
+	{
+		var mynm=document.f1.nm.value;
+		var age=document.f1.age.value;
+		var age1=parseInt(age);
+		var pass1=document.f1.pass1.value;
+		var pass2=document.f1.pass2.value;
+		var fees=document.f1.fees.value;
+		var fees1=parseInt(fees);
+
+		if(mynm=="")
+	{
+
+		alert("Please Enter your name!!!");
+		document.f1.nm.focus();
+		return false;
+
+	}
+	 
+	 if(age=="")
+	 {
+	 	alert("Please enter your age !!!");
+	 	document.f1.age.focus();
+	 	return false;
+
+	 }
+
+	 if(isNaN(age1))
+	 {
+	 	alert("Please enter nummeric age!!!");
+	 	document.f1.age.value="";
+	 	document.f1.age.focus();
+	 	return false;
+	 }
+
+	 if(pass1=="")
+	 {
+	 	alert("Please enter password!!!");
+	 	document.f1.pass1.focus();
+	 	return false;
+	 }
+	 if (pass2=="")
+	 {
+	 	alert("Please enter password !!! ")
+	 	document.f1.pass2.focus();
+	 	return false;
+	 }
+	 if (pass1!=pass2)
+	
+	 {
+	 	alert("Password does not match !!! ");
+	 	document.f1.pass1.value="";
+	    document.f1.pass2.value="";
+	    document.f1.pass1.focus();
+	    return false;
+	 	
+	 }
+
+	 if (fees=="")
+	 {
+	 	alert("Please Enter Fees !!!")
+	 	document.f1.fees.focus();
+	 }
+	 if (isNoN(fees1))
+	 {
+	 	alert("Please Enter nummeric  Fees!!!")
+	 	document.f1.fees.value="";
+	 	document.f1.fees.focus();
+	 	return false;
+
+	 }
+	 if (fees1<780000)
+	 {
+	 	alert("Your fees Equal or more than 78000/-")
+	 	document.f1.fees
+	 }
+	}
+
+
+
+</script>
+
+ </head>
+ <body bgcolor="yellow">
+ 	<form name="f1" method="post" onsubmit="return validation();" action="jslink.html">
+ 		Enter name <input type="text" name="nm">
+ 		<br>
+ 		Enter Age <input type="text" name="age">
+ 		<br>
+ 		Enter Password<input type="password" name="pass1">
+ 		<br>
+ 		Re-Enter Password<input type="password" name="pass2">
+ 		<br>
+ 		Enter Fees<input type="text" name="fees"> (Your fee equal or more than 78000/-)
+ 		<br>
+ 		<input type="submit" name="" value="Data Save!!!">
+
+ 	</form>
+
+ </body>
+ </html>
+ 	
+
+
+ 
+
+</body>
+</html>

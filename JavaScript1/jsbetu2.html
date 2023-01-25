@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>mysite</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var x=40;
+	console.log(x); //40
+
+	{
+		var x=50;
+		console.log(x); //50 Variab defined with var does not have Block Scope.
+
+	}
+	console.log(x); //50
+
+	let y=70;
+	console.log(y); //70
+	{
+		let y=80;
+		console.log(y); //80 Variables defined with let have Block Scope.
+
+	}
+	console.log(y); //70  
+</script>
+</body>
+</html>

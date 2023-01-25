@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my site </title>
+
+    <script type="text/javascript">
+
+//name.pop();
+//name.push();
+//delete name[1]
+//name.shift();
+//name.unshift("mumbai");
+//name[2]="rohan";
+      function Display()
+      {
+        const name=["raju", "sanju", "rohan" , "pradeep"];
+        const fname=["mohit","seema","deepa"];
+        const sname=["Sandeep","ravi","sujan"];
+        document.getElementById('demo').innerHTML=name;
+        document.getElementById('demo1').innerHTML=fname;
+         document.getElementById('demo2').innerHTML=sname;
+        const friends=name.concat(fname,sname);
+        document.getElementById('demo3').innerHTML=friends;
+     
+      }
+    </script>
+</head>
+       <body>
+
+   <h1 id="demo"> Welcome To Cybrom </h1>
+     <h1 id="demo1"> We are Developer </h1>
+       <h1 id="demo2"> We are software engineer </h1>
+          <h1 id="demo3"> We are web deweloper  </h1>
+     <button onclick="Display();"> Click here!!!</button>
+ </body>
+     </html>
+
+
+</body>
+
+</html>
+
+ 
+

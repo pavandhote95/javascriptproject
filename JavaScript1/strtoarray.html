@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mysite</title>
+</head>
+<body>
+<script type="text/javascript">
+	let text ="Bhopal,Indore,Gwalior,Jablpur,Satna,Panna,Ujjain";
+
+	let mydata=text.split(",");
+	document.write("<ul>");
+
+	for (let i=0; i<mydata.length; i++)
+	{
+		document.write("<li>",mydata[i],"</li>");
+
+	}
+document.write("</ul>");
+</script>
+</body>
+</html>
